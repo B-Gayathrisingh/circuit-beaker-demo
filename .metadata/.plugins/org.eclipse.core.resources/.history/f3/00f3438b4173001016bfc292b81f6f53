@@ -1,0 +1,16 @@
+package com.example.api_gateway_client.service;
+
+
+import com.example.apigateway.client.ExternalServiceClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class GatewayService {
+    @Autowired
+    private ExternalServiceClient client;
+
+    public String callExternalService() {
+        return client.getResponse();
+    }
+}

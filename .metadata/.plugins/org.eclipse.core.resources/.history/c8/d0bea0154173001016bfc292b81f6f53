@@ -1,0 +1,5 @@
+package com.example.api_gateway_client.service;
+
+public class GatewayService {
+
+}

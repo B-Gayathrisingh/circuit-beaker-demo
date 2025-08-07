@@ -1,0 +1,18 @@
+package com.example.api_gateway_client.controller;
+
+import com.example.apigateway.service.GatewayService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GatewayController {
+
+    @Autowired
+    private GatewayService gatewayService;
+
+    @GetMapping("/call")
+    public String callService() {
+        return gatewayService.callExternalService();
+    }
+}

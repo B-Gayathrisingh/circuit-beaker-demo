@@ -1,0 +1,5 @@
+package com.example.api_gateway_client.controller;
+
+public class GatewayController {
+
+}
